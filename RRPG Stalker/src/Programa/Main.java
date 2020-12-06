@@ -1,13 +1,13 @@
 package Programa;
 
-import java.io.IOException;
 
-import Logic.StalkerBot;
+
+
 
 public class Main {
-   public static void main(String args[]) throws IOException {
+   public static void main(String args[]) {
 	  
-	   System.out.println(StalkerBot.StalkerBot("helldemos", 125140));
+	   
    }
    
 }

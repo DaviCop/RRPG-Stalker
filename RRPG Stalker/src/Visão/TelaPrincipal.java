@@ -5,14 +5,12 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JTextPane;
 
-import Logic.StalkerBot;
 import Logic.Stalkerbot2;
 
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import java.awt.event.ActionEvent;
 import javax.swing.JProgressBar;
@@ -82,7 +80,7 @@ public class TelaPrincipal {
 		
 		JTextPane textResult = new JTextPane();
 		textResult.setEditable(false);
-		textResult.setText("O Resultado da busca ira aparecer aqui, ela pode demorar algum tempo dependendo do seu computador e da velocidade da sua internet.\r\n\r\nO codigo desse programa est\u00E1 disponivel no GitHub.\r\nLink: ");
+		textResult.setText("O Resultado da busca ira aparecer aqui, ela pode demorar algum tempo dependendo do seu computador e da velocidade da sua internet.\r\n\r\nO codigo fonte desse programa est\u00E1 disponivel no GitHub.\r\nLink: https://github.com/DaviCop/RRPG-Stalker/");
 		textResult.setBounds(60, 148, 462, 98);
 		frmProgramaAltamenteTecnologico.getContentPane().add(textResult);
 		
