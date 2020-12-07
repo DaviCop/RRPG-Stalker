@@ -4,6 +4,7 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
+
 public class Stalkerbot2 {
 	private boolean debugMode = false;
 	private boolean emExecução = true;

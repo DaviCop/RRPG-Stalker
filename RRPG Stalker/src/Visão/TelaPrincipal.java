@@ -16,7 +16,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.JProgressBar;
 
 public class TelaPrincipal {
-
+	//Define o numero de Threads a serem criadas.
+	private int _NumeroDeThreads = 500;//O Numero deve ser par, para evitar problemas.
+	//===========================================
 	private JFrame frmProgramaAltamenteTecnologico;
 	private JTextField txtNick;
 	public static String logsDeTeste;
@@ -115,9 +117,9 @@ public class TelaPrincipal {
 				}else {
 				
 					int myI = 0;
-					for (int i = 0 ; i<=499 ; i++) {
-						botBusca[i] = new Stalkerbot2(nickkk, myI, myI+500, i);
-						myI += 500;
+					for (int i = 0 ; i<=(_NumeroDeThreads-1) ; i++) {
+						botBusca[i] = new Stalkerbot2(nickkk, myI, myI+(250000/_NumeroDeThreads), i);
+						myI += (250000/_NumeroDeThreads);
 						
 					}
 					
